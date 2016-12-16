@@ -1,0 +1,14 @@
+[package]
+name    = "libpnet_basicpacket"
+version = "0.0.1"
+authors = ["Term Quick <termquick@gmail.com>"]
+build   = "build.rs"
+
+[build-dependencies]
+syntex      = "*"
+pnet_macros = "*"
+
+[dependencies]
+pnet                = "*"
+pnet_macros_support = "*"
+
