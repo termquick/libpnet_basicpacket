@@ -1,6 +1,6 @@
 # lipnet_basicpacket  
 
-See source: [libpnet examples](https://github.com/libpnet/lipnet/tree/master/docs).  
+See source: [libpnet example in docs](https://github.com/libpnet/lipnet/tree/master/docs).  
 
 Usage:  
 
