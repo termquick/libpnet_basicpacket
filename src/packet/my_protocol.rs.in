@@ -1,8 +1,7 @@
 use pnet::packet::PrimitiveValues;
 use pnet_macros_support::types::*;
 
-///Documentation comment for MyProtocolField
-#[derive(PartialEq, Eq, PartialOrd, Clone, Copy, Debug, Hash)]
+#[derive(PartialEq, Eq, PartialOrd, Ord, Clone, Copy, Debug, Hash)]
 pub struct MyProtocolField(pub u8);
 
 impl MyProtocolField {
@@ -23,18 +22,18 @@ impl PrimitiveValues for MyProtocolField {
 pub mod MyProtocolFieldValues {
 	use packet::my_protocol::MyProtocolField;
 	
-	/// Documentation comment for VALUE_FOO
+	/// Documentation for VALUE_FOO
 	pub const VALUE_FOO: MyProtocolField = MyProtocolField(0);
-	/// Docmentation comment for VALUE_BAR
+	/// Documentation for VALUE_BAR
 	pub const VALUE_BAR: MyProtocolField = MyProtocolField(1);
 }
 
-/// Documentation comment for MyProtocol
+/// Documentation for MyProtocol
 #[packet]
 pub struct MyProtocol {
 	#[construct_with(u8)]
-	field:    MyProtocolField,
+	field: MyProtocolField,
 	checksum: u16be,
 	#[payload]
-	payload:  Vec<u8>,
+	payload: Vec<u8>
 }

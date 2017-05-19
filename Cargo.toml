@@ -5,10 +5,10 @@ authors = ["Term Quick <termquick@gmail.com>"]
 build   = "build.rs"
 
 [build-dependencies]
+glob = "*"
 syntex      = "0.42.*"
 pnet_macros = "*"
 
 [dependencies]
 pnet                = "*"
 pnet_macros_support = "*"
-
