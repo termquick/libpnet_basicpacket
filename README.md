@@ -1,4 +1,4 @@
-# lipnet_basicpacket  
+# libpnet_basicpacket  
 
 See source: [libpnet example in docs](https://github.com/libpnet/libpnet/blob/master/docs/using_packet.md).  
 
